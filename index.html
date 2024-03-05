@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Authentication Page</title>
+</head>
+
+<style>
+    *{
+    margin:0px;
+    box-sizing : border-box;
+    padding:0px;
+}
+body{
+    background-color: aqua;
+    font-family: 'Times New Roman', Times, serif;
+    height:50px;
+    margin:200px 400px;
+    font-size:30px;
+    border:50px;
+    width:40%;
+    
+
+}
+
+.signin-form{
+    position:absolute;
+    max-width:400px;
+    padding:4px 30px;
+    background: white;
+}
+
+.signin-form .form-title{
+    font-family:'Times New Roman', Times, serif;
+    text-align:center;
+    font-size:40px;
+    margin:24px 0px;
+}
+
+    
+
+.signin-form .signinform-input{
+
+    margin:4px 5px;
+}
+
+.signin-form  .signinform-input label,.signin-form .captcha label{
+    display:block;
+    font-size:16px;
+    color:purple;
+}
+
+.signin-form .signinform-input input{
+    height:32px;
+}
+
+.signin-form .captcha{
+    margin:15px 0px;
+}
+
+.signin-form .captcha .preview {
+    color:red;
+    width:100%;
+    text-align:center;
+    height:55px;
+    line-height:36px;
+    letter-spacing:12px;
+    border:1px solid black;
+
+
+}
+
+.signin-form .captcha .preview span{
+    display:inline block;
+}
+.signin-form .captcha .captcha-form{
+    display:flex;
+}
+.signin-form .captcha .captcha-form input{
+    width:112%;
+    padding: 12px;
+    border:1px solid blue;
+}
+.signin-form .captcha .captcha-form  .captcha-refresh{
+    width:100%;
+    border:none;
+    outline:none;
+    background:red;
+    font-size:20px;
+}
+.signin-form #login-btn{
+width:48%;
+height:40px;
+background-color: purple;
+color:white;
+cursor:pointer;
+    }
+
+</style>
+<body>
+    <div class="signin-form">
+        <div class="form-title">
+            User Login
+        </div>
+        
+           
+        
+        <div class="signinform-input">
+            <label for="userName">UserName</label>
+            <input type="text"  id="userName">
+        </div>
+               
+               <div class="signinform-input">
+                <label for="password">Password</label>
+                <input type="text"  id="password">
+               </div>
+                   
+                   <div class="signinform-input">
+                    <label for="email">Email</label>
+                    <input type="text"  id="email">
+                   </div>
+                       
+                       <div class="captcha">
+                        <label for="captcha-input">Enter the Captcha</label>
+                        <div class="preview"></div>
+                        <div class="captcha-form">
+                            <input type="text"    id="captcha-form"   placeholder="Enter Captcha text">
+                        
+                       
+                           
+                           
+                           
+                           <button class="captcha-refresh">
+                            <i class="fa fa-refresh">refresh</i>
+                           </button>
+                           
+    </div>
+    </div>
+    <div class="signinform-input">
+        <button id = "login-btn">Login</button>
+    </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
